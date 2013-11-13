@@ -25,4 +25,19 @@ Place deployment info in `secrets.json`, like this:
       }
     }
 
+## ToDo
 
+* Compile Less
+* Import only needed bootstrap less files
+* Concat bootstrap and app scripts (usemin)
+* Determine need for jQuery/BtSt scripts?
+
+## Changelog
+
+### 2013.11.13
+
+* Introduce Grunt
+* Grunt-rsync for deployment
+* Introduce imagemin into Gruntfile
+* Move files into `app/` dir
+* Local server for development, using `node-static` and a simple `server.js` script

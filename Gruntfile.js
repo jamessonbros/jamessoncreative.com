@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+  var IMAGE_OPT_LEVEL = 7;
+
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
@@ -7,7 +9,7 @@ module.exports = function(grunt) {
     imagemin: {
       optimize: {
         options: {
-          optimizationLevel: 3
+          optimizationLevel: IMAGE_OPT_LEVEL
         },
         files: [{
           expand: true,
