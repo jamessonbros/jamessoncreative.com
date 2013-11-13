@@ -27,6 +27,7 @@ Place deployment info in `secrets.json`, like this:
 
 ## ToDo
 
+* ~~robots.txt file~~
 * Just use yeoman? Convert to yeoman.
 * Compile Less during build
 * Import only needed bootstrap less files
