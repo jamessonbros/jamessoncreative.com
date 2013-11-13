@@ -8,3 +8,4 @@ A static, single-pager site for JC.
 1. Clone the repo
 2. `cd` into the project and run `npm install`
 3. Run `node server.js` from the root to start up a local server at [localhost:3000](http://localhost:3000/)
+4. `CTRL-C` to stop the local server
