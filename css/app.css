@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+html,
+body {
+  height: 100%;
+}
+a {
+  color: #f30709;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+body {
+  background: #000 url(../img/bg.jpg) top center no-repeat;
+  color: #a1906a;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.heading {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 700;
+  padding: 0 0 15px 0;
+  color: #b3e94c;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  color: #b3e94c;
+}
+
+img {
+    margin: 0 auto;
+}
