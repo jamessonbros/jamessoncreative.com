@@ -27,10 +27,12 @@ Place deployment info in `secrets.json`, like this:
 
 ## ToDo
 
-* Compile Less
+* Just use yeoman? Convert to yeoman.
+* Compile Less during build
 * Import only needed bootstrap less files
-* Concat bootstrap and app scripts (usemin)
-* Determine need for jQuery/BtSt scripts?
+* Concat bootstrap and app styles usemin)
+* Determine need for jquery/bootstrap scripts
+* Optimize images
 
 ## Changelog
 
