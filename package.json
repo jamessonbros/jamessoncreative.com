@@ -1,0 +1,8 @@
+{
+  "name": "jamessoncreative.com",
+  "description": "static, one-pager",
+  "private": true,
+  "devDependencies": {
+    "node-static": "~0.7.2"
+  }
+}
