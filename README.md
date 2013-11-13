@@ -27,6 +27,7 @@ Place deployment info in `secrets.json`, like this:
 
 ## ToDo
 
+* Licenses
 * ~~robots.txt file~~
 * Just use yeoman? Convert to yeoman.
 * Compile Less during build
