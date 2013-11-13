@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         options: {
           src: 'app/',
           dest: '<%= secrets.rsync.prod.dest %>',
-          host: '<%= secrets.rsync.prod.host'
+          host: '<%= secrets.rsync.prod.host %>'
         }
       }
     }
