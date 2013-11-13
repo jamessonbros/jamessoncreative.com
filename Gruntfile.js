@@ -4,6 +4,19 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     secrets: grunt.file.readJSON('secrets.json'),
+    imagemin: {
+      optimize: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          cwd: 'app/',
+          src: ['img/*.{png|gif|jpg}', 'img/**/*'],
+          dest: 'dist/'
+        }]
+      }
+    },
     rsync: {
       options: {
         args: ['--verbose', '-r'],
