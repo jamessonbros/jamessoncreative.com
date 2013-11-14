@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('deploy', ['rsync']);
+  grunt.registerTask('deploy', ['build', 'rsync']);
 
   grunt.registerTask('build', [
     'clean',
