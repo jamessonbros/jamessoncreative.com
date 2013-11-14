@@ -41,13 +41,13 @@ module.exports = function(grunt) {
     },
     rsync: {
       options: {
-        args: ['--verbose', '-r'],
+        args: ['--verbose', '-r', '--del'],
         exclude: ['.git*', '.DS*'],
         recursive: true
       },
       prod: {
         options: {
-          src: 'app/',
+          src: 'dist/',
           dest: '<%= secrets.rsync.prod.dest %>',
           host: '<%= secrets.rsync.prod.host %>'
         }
