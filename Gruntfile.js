@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       }
     },
     less: {
-
+      'app/css/app.css': 'app/less/app.less'
     },
     rsync: {
       options: {
@@ -40,6 +40,11 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy', ['rsync']);
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('build', [
+    'imagemin',
+    'less'
+  ]);
+
+  grunt.registerTask('default', ['build']);
 
 };

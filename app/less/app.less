@@ -1,0 +1,54 @@
+// TODO: Only import needed bootstrap files
+@import "../bower_components/bootstrap/less/bootstrap";
+@import "_vars";
+
+html,
+body {
+  height: 100%;
+}
+a {
+  color: @color-jc-red;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+body {
+  background: black url(../img/bg.jpg) top center no-repeat;
+  color: @color-jc-darkest-grey;
+  font-family: @font-family-sans-serif;
+}
+
+.heading {
+  font-family: @headings-font-family;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 700;
+  padding: 0 0 15px 0;
+  color: @color-jc-light-green;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  color: @color-jc-light-green;
+}
+
+img {
+    margin: 0 auto;
+}
