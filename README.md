@@ -31,8 +31,9 @@ Place deployment info in `secrets.json`, like this:
 * ~~robots.txt file~~
 * Just use yeoman? Convert to yeoman.
 * ~~Compile Less during build~~
-* Import only needed bootstrap less files
-* Concat bootstrap and app styles usemin)
+* ~~Import only needed bootstrap less files~~
+* Concat bootstrap and app styles (usemin)
+* Minify assets
 * Determine need for jquery/bootstrap scripts
 * ~~Optimize images~~
 
@@ -42,6 +43,7 @@ Place deployment info in `secrets.json`, like this:
 
 * Compile less during build
 * Optimize images during build
+* Reduce bootstrap imports, load only what's needed
 
 ### 2013.11.13
 

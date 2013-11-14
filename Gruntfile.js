@@ -6,6 +6,9 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     secrets: grunt.file.readJSON('secrets.json'),
+    clean: {
+      build: ['dist/']
+    },
     imagemin: {
       optimize: {
         options: {
@@ -14,13 +17,27 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'app/',
-          src: ['img/*.{png|gif|jpg}', 'img/**/*'],
+          src: ['*.png', 'img/*.{png|gif|jpg}', 'img/**/*'],
           dest: 'dist/'
         }]
       }
     },
     less: {
       'app/css/app.css': 'app/less/app.less'
+    },
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          cwd: 'app/',
+          src: [
+            '*.html',
+            'css/*.css', 
+            '*.ico'
+          ],
+          dest: 'dist/'
+        }]
+      }
     },
     rsync: {
       options: {
@@ -41,8 +58,10 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy', ['rsync']);
 
   grunt.registerTask('build', [
+    'clean',
     'imagemin',
-    'less'
+    'less',
+    'copy'
   ]);
 
   grunt.registerTask('default', ['build']);
