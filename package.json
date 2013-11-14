@@ -2,11 +2,17 @@
   "name": "jamessoncreative.com",
   "description": "static, one-pager",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamessonbros/jamessoncreative.com"
+  },
   "devDependencies": {
     "node-static": "~0.7.2",
     "grunt": "~0.4.1",
     "grunt-rsync": "~0.2.1",
     "matchdep": "~0.3.0",
-    "grunt-contrib-imagemin": "~0.3.0"
+    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-less": "~0.8.2"
   }
 }

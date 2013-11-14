@@ -19,6 +19,9 @@ module.exports = function(grunt) {
         }]
       }
     },
+    less: {
+
+    },
     rsync: {
       options: {
         args: ['--verbose', '-r'],
