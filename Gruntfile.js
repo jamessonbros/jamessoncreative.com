@@ -23,6 +23,9 @@ module.exports = function(grunt) {
       }
     },
     less: {
+      options: {
+        compress: true
+      },
       'app/css/app.css': 'app/less/app.less'
     },
     copy: {
@@ -32,7 +35,7 @@ module.exports = function(grunt) {
           cwd: 'app/',
           src: [
             '*.html',
-            'css/*.css', 
+            'css/*.css',
             '*.ico'
           ],
           dest: 'dist/'
