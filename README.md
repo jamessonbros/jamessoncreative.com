@@ -27,7 +27,7 @@ Place deployment info in `secrets.json`, like this:
 
 ## ToDo
 
-* Licenses
+* ~~Licenses~~
 * ~~robots.txt file~~
 * ~~Compile Less during build~~
 * ~~Import only needed bootstrap less files~~
@@ -36,6 +36,10 @@ Place deployment info in `secrets.json`, like this:
 * ~~Optimize images~~
 
 ## Changelog
+
+### 2013.11.15
+
+* Added WTFPL
 
 ### 2013.11.14
 
